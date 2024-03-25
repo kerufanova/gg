@@ -337,6 +337,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: sc, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &56999781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,7 +831,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1207443268}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e345d9219e55842469ab93d67f425999, type: 3}
+  m_Script: {fileID: 11500000, guid: fe627e0043f321c4d91822f36f0a3cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1267980209
