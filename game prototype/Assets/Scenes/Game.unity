@@ -1561,8 +1561,8 @@ GameObject:
   - component: {fileID: 1882411861}
   - component: {fileID: 1882411864}
   - component: {fileID: 1882411868}
-  - component: {fileID: 1882411869}
   - component: {fileID: 1882411866}
+  - component: {fileID: 1882411869}
   - component: {fileID: 1882411867}
   m_Layer: 7
   m_Name: Player
@@ -1673,11 +1673,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1882411859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42453b7d91f494d4f95300055dfe082f, type: 3}
+  m_Script: {fileID: 11500000, guid: bf2ad3cf797db944b8a81e9d6c89e39b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footstepsSound: {fileID: 536312581}
-  sprintSound: {fileID: 796894133}
+  playerCamera: {fileID: 0}
+  walkSpeed: 6
+  runSpeed: 12
+  jumpPower: 7
+  gravity: 10
+  lookSpeed: 2
+  lookXLimit: 45
+  canMove: 1
 --- !u!114 &1882411867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1687,7 +1693,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1882411859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 609dbc44db6cea4479d5e51146852e52, type: 3}
+  m_Script: {fileID: 11500000, guid: f1b62511b504f9a4eb85719ad812bab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enable: 1
@@ -1704,10 +1710,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1882411859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0c3a4b50269ab4796899bc6026b360, type: 3}
+  m_Script: {fileID: 11500000, guid: b9f5a2be42a35cb429d25266a8489737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 3.1
+  sensitivity: 2.1
   yRotationLimit: 41
 --- !u!114 &1882411869
 MonoBehaviour:
@@ -1718,17 +1724,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1882411859}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78f12dae52c17f4585987567f1fcdc1, type: 3}
+  m_Script: {fileID: 11500000, guid: 54e4c5a255a33744cb70da9ba258be16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 963194227}
-  walkSpeed: 6
-  runSpeed: 10
-  jumpPower: 5
-  gravity: 10
-  lookSpeed: 2
-  lookXLimit: 45
-  canMove: 1
+  footstepsSound: {fileID: 536312581}
+  sprintSound: {fileID: 796894133}
 --- !u!1 &1996302699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,7 +1995,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f020819517624d849a10c2493a3fd4a9, type: 2}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
